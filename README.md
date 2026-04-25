@@ -1,0 +1,108 @@
+# Playing Card Collection REST API
+
+A RESTful API built using Node.js and Express.js to manage a collection of playing cards.  
+This project demonstrates CRUD operations and API testing using Postman.
+
+
+## Objective
+
+To develop a RESTful API for managing a playing card collection using Express.js and test the endpoints using Postman.
+
+
+## Features
+
+- Create a new playing card
+- View all playing cards
+- View a single card by ID
+- Update a card
+- Delete a card
+- Proper HTTP status codes
+- Modular folder structure using routes and controllers
+
+
+## Tech Stack
+
+- Node.js (v18+)
+- Express.js
+- CORS
+- Postman (for API testing)
+
+
+## Installation and Setup
+
+### Clone the Repository
+
+git clone https://github.com/Pritesh23-P/24BDA70006-4b-Pritesh-Kumar-Pandey.git
+
+### Navigate to Project Folder
+
+cd 24BDA70006-4b-Pritesh-Kumar-Pandey
+
+### Install Dependencies
+
+pnpm install
+
+### Run the Server
+
+pnpm dev
+
+Server will start at:
+
+http://localhost:3000
+
+
+## API Endpoints
+
+### Home Route
+
+GET /
+
+### Create Card
+
+POST /cards
+
+Request Body (JSON)
+
+{
+  "suit": "Hearts",
+  "rank": "A",
+  "color": "Red"
+}
+
+![alt text](POST.png)
+
+### Get All Cards
+
+GET /cards
+
+![alt text](GET.png)
+
+### Update Card
+
+PUT /cards/:id
+
+![alt text](PUT.png)
+
+### Delete Card
+
+DELETE /cards/:id
+
+![alt text](DELETE.png)
+
+## Testing
+
+All API endpoints were tested using Postman.
+
+
+## REST Concepts Implemented
+
+- Stateless architecture
+- Resource-based routing
+- HTTP methods: GET, POST, PUT, DELETE
+- Proper status codes: 200, 201, 200, 200
+
+
+## Conclusion
+
+This project successfully demonstrates the implementation of a RESTful API using Express.js.  
+It performs CRUD operations on a playing card collection and follows a clean code structure using routes and controllers.
